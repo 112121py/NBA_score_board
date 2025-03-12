@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.single_ctrl">
+   <children>
+      <SplitPane dividerPositions="0.08" orientation="VERTICAL" prefHeight="500.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="backhome" mnemonicParsing="false" onAction="#backhome" prefHeight="40.0" prefWidth="50.0" style="-fx-background-radius: 9;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../../pic/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="back" layoutX="748.0" mnemonicParsing="false" onAction="#goback" prefHeight="40.0" prefWidth="50.0" text="back" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../各種圖片/game.png" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="datepicker" layoutX="242.0" layoutY="68.0" prefHeight="22.0" prefWidth="247.0" />
+                  <Label layoutX="310.0" layoutY="14.0" text="選擇下注日期" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choosegame" layoutX="78.0" layoutY="166.0" prefHeight="23.0" prefWidth="226.0" />
+                  <Label layoutX="54.0" layoutY="117.0" text="1. 選擇對局" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="474.0" layoutY="117.0" text="2. 選擇玩法" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="228.0" text="3. 下注金額 " textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="input" layoutX="78.0" layoutY="277.0" />
+                  <Button fx:id="ok" layoutX="255.0" layoutY="277.0" mnemonicParsing="false" onAction="#getmoney" text="ok" />
+                  <Label layoutX="474.0" layoutY="227.0" text="4. 再億把 " textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="conti" layoutX="501.0" layoutY="283.0" mnemonicParsing="false" onAction="#conti" prefHeight="35.0" prefWidth="79.0" text="哪次不繼續" />
+                  <Button fx:id="result" layoutX="611.0" layoutY="283.0" mnemonicParsing="false" onAction="#seeresult" prefHeight="35.0" prefWidth="80.0" text="下次一定" />
+                  <Button fx:id="dateok" layoutX="509.0" layoutY="68.0" mnemonicParsing="false" onAction="#getdate" text="ok" />
+                  <Button fx:id="gameok1" layoutX="320.0" layoutY="166.0" mnemonicParsing="false" onAction="#getgame" text="ok" />
+                  <ChoiceBox fx:id="choose6" layoutX="501.0" layoutY="166.0" prefHeight="23.0" prefWidth="226.0" />
+                  <Button fx:id="typeok" layoutX="743.0" layoutY="166.0" mnemonicParsing="false" onAction="#gettype" text="ok" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+   </children>
+</Pane>

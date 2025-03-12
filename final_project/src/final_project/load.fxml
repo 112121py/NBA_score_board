@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.ani_ctrl">
+   <children>
+      <Arc fx:id="arc" fill="#1f93ff00" layoutX="400.0" layoutY="250.0" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="45.0" stroke="#a6a5a5" strokeLineCap="BUTT" strokeWidth="10.0" />
+      <ImageView fx:id="huh" fitHeight="200.0" fitWidth="199.0" layoutX="300.0" layoutY="150.0">
+         <image>
+            <Image url="@../../pic/loading.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
